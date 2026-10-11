@@ -73,6 +73,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(text="⏪ -15", callback_data=f"SEEK -15|{chat_id}"),
+            InlineKeyboardButton(text="Aʟʟ Bᴏᴛs", url="https://t.me/myanmarbot_music/53"),
             InlineKeyboardButton(text="+15 ⏩", callback_data=f"SEEK +15|{chat_id}"),
         ],
         [
@@ -96,6 +97,7 @@ def stream_markup(_, chat_id):
          ],
         [
             InlineKeyboardButton(text="⏪ -15", callback_data=f"SEEK -15|{chat_id}"),
+            InlineKeyboardButton(text="Aʟʟ Bᴏᴛs", url="https://t.me/myanmarbot_music/53"),
             InlineKeyboardButton(text="+15 ⏩", callback_data=f"SEEK +15|{chat_id}"),
         ],
         [
