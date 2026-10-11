@@ -57,7 +57,7 @@ from ThakurMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 SHASHANK_PIC = [
- "https://anya-file-host.vercel.app/6apmzgense",
+ "https://files.catbox.moe/onc6xg.jpg",
     
 ]
 
@@ -125,9 +125,9 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
         media=InputMediaVideo(
-            "https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", 
+            "https://graph.org/file/286aa2427c36ca129f609-b2da780c99e73d27a7.mp4", 
             has_spoiler=True, 
-            caption="ʟᴜɴᴅ ʟᴇʟᴇ ᴍᴇʀᴀ ʀᴇᴘᴏ ᴋʏᴀ ᴋᴀʀᴇɢᴀ, ʟᴇɢᴀ ᴋʏᴀ ʙʜᴏsᴀᴅɪᴋᴇ"
+            caption="ပြောင်းလဲခြင်းတွေက ကောင်းပေးမဲ့ ခနခနပြောင်းရင် ခံရတက်တယ် မိတ်ဆွေ"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
