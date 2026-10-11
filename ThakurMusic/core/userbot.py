@@ -50,8 +50,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("sigma_bots")
-                await self.one.join_chat("sigma_support2")
+                await self.one.join_chat("HEX_KING9")
+                await self.one.join_chat("HEX_KING9")
             except:
                 pass
             assistants.append(1)
@@ -69,8 +69,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("sigma_bots")
-                await self.two.join_chat("sigma_support2")
+                await self.two.join_chat("HEX_KING9")
+                await self.two.join_chat("HEX_KING9")
             except:
                 pass
             assistants.append(2)
