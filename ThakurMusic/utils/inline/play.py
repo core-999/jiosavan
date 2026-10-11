@@ -77,7 +77,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⚙️ ᴍᴏʀᴇ sᴇᴛᴛɪɴɢs",
+                text="ᴀᴜᴛᴏᴘʟᴀʏ sᴇᴛᴛɪɴɢs",
                 callback_data=f"more_settings|{chat_id}",
             )
         ],
