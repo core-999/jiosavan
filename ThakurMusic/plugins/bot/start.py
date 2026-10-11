@@ -41,7 +41,7 @@ from strings import get_string
 
 
 SHASHANK_PIC = [
- "https://anya-file-host.vercel.app/6apmzgense",
+ "https://files.catbox.moe/onc6xg.jpg",
     
 ]
 
