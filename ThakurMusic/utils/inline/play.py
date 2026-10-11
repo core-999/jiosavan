@@ -100,7 +100,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⚙️ ᴍᴏʀᴇ sᴇᴛᴛɪɴɢs",
+                text="ᴀᴜᴛᴏᴘʟᴀʏ sᴇᴛᴛɪɴɢs",
                 callback_data=f"more_settings|{chat_id}",
             )
         ],
