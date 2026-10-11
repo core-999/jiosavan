@@ -23,12 +23,12 @@ logging.basicConfig(level=logging.INFO)
 async def video_chat_started(client, message: Message):
     chat = message.chat
     await message.reply(
-        f"🎥 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ ɪɴ {chat.title}!\n\n ᴊᴏɪɴ ᴜs ɴᴏᴡ ғᴏʀ ᴀ ғᴜɴ ᴛɪᴍᴇ ᴛᴏɢᴇᴛʜᴇʀ! 😄"
+        f"🎥 vc ဖွင့်ပိဆိုတော့ သူက အရေးမလုပ်လိုက်လို့လား {chat.title}!\n\n ချစ်တယ်ဆိုတာ ယုံနေသ၍ ခံနေရမှာပဲ သီချင်းပဲနားထောင်😄"
     )
 
 @app.on_message(filters.video_chat_ended)
 async def video_chat_ended(client, message: Message):
     chat = message.chat
     await message.reply(
-        f"🚫 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ʜᴀs ᴇɴᴅᴇᴅ ɪɴ {chat.title}.\n\nsᴇᴇ ʏᴏᴜ ɴᴇxᴛ ᴛɪᴍᴇ! 👋"
+        f"🚫 ရပ်လိုက်ပိပေါ့ {chat.title}.\n\nသူက အရေးပေးလာလို့လား 👋"
     )
