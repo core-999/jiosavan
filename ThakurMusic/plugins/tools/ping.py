@@ -24,7 +24,7 @@ from ThakurMusic.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 SHASHANK_PIC = [
-    "https://files.catbox.moe/huadxp.jpg",
+    "https://i.ibb.co/wFGtd27V/x.jpg",
     
 ]
 
