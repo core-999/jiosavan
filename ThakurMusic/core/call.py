@@ -420,7 +420,7 @@ class Call(PyTgCalls):
 
                 await cleanup_all_messages(chat_id)
                 await _clear_(chat_id)
-                await app.send_message(chat_id, "<b>💮 ᴛʜᴇ ǫᴜᴇᴜᴇ ʜᴀs ғɪɴɪsʜᴇᴅ.</b>\n\n<b>💐 ᴜsᴇ /play ᴛᴏ ᴀᴅᴅ ᴍᴏʀᴇ sᴏɴɢs..!</b>")
+                await app.send_message(chat_id, "<b>💮 သီချင်းပဲ ဆက်နားထောင်ပါ။</b>\n\n<b>💐 သူကမှာ အဖက်မလုပ်တာ သူငယ်ချင်းရယ် /play ᴛᴏ ᴀᴅᴅ ᴍᴏʀᴇ sᴏɴɢs..!</b>")
                 return await client.leave_call(chat_id)
         except:
             try:
