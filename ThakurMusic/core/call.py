@@ -367,7 +367,7 @@ class Call(PyTgCalls):
                                 language = await get_lang(chat_id)
                                 _ = get_string(language)
                                 original_chat_id = popped.get("chat_id", chat_id)
-                                mystic = await app.send_message(original_chat_id, "🔁 <b>ᴀᴜᴛᴏᴘʟᴀʏ</b> | ꜰᴇᴛᴄʜɪɴɢ ɴᴇxᴛ sᴏɴɢ...")
+                                mystic = await app.send_message(original_chat_id, "💕 <b>ᴀᴜᴛᴏᴘʟᴀʏ</b> | ꜰᴇᴛᴄʜɪɴɢ ɴᴇxᴛ sᴏɴɢ...💕")
 
                                 title = (details["title"]).title()
                                 duration_min = details["duration_min"]
@@ -385,7 +385,7 @@ class Call(PyTgCalls):
                                     return await client.leave_call(chat_id)
 
                                 db[chat_id] = []
-                                await put_queue(chat_id, original_chat_id, file_path if direct else f"vid_{related_vidid}", title, duration_min, "🔁 AutoPlay", related_vidid, 0, "audio")
+                                await put_queue(chat_id, original_chat_id, file_path if direct else f"vid_{related_vidid}", title, duration_min, "AutoPlay❣", related_vidid, 0, "audio")
 
                                 stream = MediaStream(file_path, audio_parameters=AudioQuality.HIGH, video_flags=MediaStream.Flags.IGNORE)
                                 try:
@@ -399,7 +399,7 @@ class Call(PyTgCalls):
                                 button = stream_markup(_, chat_id)
                                 await mystic.delete()
 
-                                caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{related_vidid}", title[:23], duration_min, "🔁 AutoPlay", "🎵 Audio")
+                                caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{related_vidid}", title[:23], duration_min, "AutoPlay❣", "🎵 Audio")
 
                                 if thumb_status:
                                     img = await get_thumb(related_vidid)
