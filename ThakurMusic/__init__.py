@@ -14,14 +14,14 @@
 
 from ThakurMusic.core.bot import ThakurMusic
 from ThakurMusic.core.dir import dirr
-from ThakurMusic.core.git import git
+#from ThakurMusic.core.git import git
 from ThakurMusic.core.userbot import Userbot
 from ThakurMusic.misc import dbb, heroku
 
 from .logging import LOGGER
 
 dirr()
-git()
+#git()
 dbb()
 heroku()
 
