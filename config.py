@@ -52,14 +52,15 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ✅ Git & Upstream Repo
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/babaji067/jiosavan")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/leomm-355/jiosavan")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = getenv("GIT_TOKEN", "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")  # Only for private repo
+GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 
 # ✅ Support Links
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/messo_network")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/chhoti_bot_support")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "https://t.me/messo_network")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/myanmarbot_music")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/myanmar_music_bot2027")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "https://t.me/myanmarbot_music")
+OWNER_LINK = getenv("OWNER_LINK" , "https://t.me/cores_999")
 
 SHUKLA = getenv("SHUKLA", "https://wavetune.vercel.app")
 
@@ -97,18 +98,18 @@ userstats = {}
 clean = []
 
 # ✅ UI Images
-START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/7tg6zk.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://anya-file-host.vercel.app/ukfd2iy896")
-PLAYLIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/7tg6zk.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/xp3phx.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/xp3phx.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/onc6xg.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/onc6xg.jpg")
+PLAYLIST_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/onc6xg.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/onc6xg.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
 
 # ✅ URL Validation
 if SUPPORT_CHANNEL and not re.match(r"(?:http|https)://", SUPPORT_CHANNEL):
