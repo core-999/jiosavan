@@ -385,7 +385,7 @@ class Call(PyTgCalls):
                                     return await client.leave_call(chat_id)
 
                                 db[chat_id] = []
-                                await put_queue(chat_id, original_chat_id, file_path if direct else f"vid_{related_vidid}", title, duration_min, "AutoPlay❣", related_vidid, 0, "audio")
+                                await put_queue(chat_id, original_chat_id, file_path if direct else f"vid_{related_vidid}", title, duration_min, "ᴀᴜᴛᴏᴘʟᴀʏ", related_vidid, 0, "audio")
 
                                 stream = MediaStream(file_path, audio_parameters=AudioQuality.HIGH, video_flags=MediaStream.Flags.IGNORE)
                                 try:
@@ -399,7 +399,7 @@ class Call(PyTgCalls):
                                 button = stream_markup(_, chat_id)
                                 await mystic.delete()
 
-                                caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{related_vidid}", title[:23], duration_min, "AutoPlay❣", "🎵 Audio")
+                                caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{related_vidid}", title[:23], duration_min, "ᴀᴜᴛᴏᴘʟᴀʏ", "🎵 Audio")
 
                                 if thumb_status:
                                     img = await get_thumb(related_vidid)
@@ -420,7 +420,7 @@ class Call(PyTgCalls):
 
                 await cleanup_all_messages(chat_id)
                 await _clear_(chat_id)
-                await app.send_message(chat_id, "<b>💮 သီချင်းပဲ ဆက်နားထောင်ပါ။</b>\n\n<b>💐 သူကမှာ အဖက်မလုပ်တာ သူငယ်ချင်းရယ် /play ᴛᴏ ᴀᴅᴅ ᴍᴏʀᴇ sᴏɴɢs..!</b>")
+                await app.send_message(chat_id, "<b>💓 သီချင်းပဲ ဆက်နားထောင်ပါ။</b>\n<b>💔 သူကမှာ အဖက်မလုပ်တာ သူငယ်ချင်း 🤣 </b>\n /play <b> ᴛᴏ ᴀᴅᴅ ᴍᴏʀᴇ sᴏɴɢs..!</b>")
                 return await client.leave_call(chat_id)
         except:
             try:
@@ -462,7 +462,7 @@ class Call(PyTgCalls):
                 return await app.send_message(original_chat_id, text=_["call_6"])
 
             button = stream_markup(_, chat_id)
-            caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{videoid}", title[:23], check[0]["dur"], user, "🎥 Vɪᴅᴇᴏ" if video else "🎵 Aᴜᴅɪᴏ")
+            caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{videoid}", title[:23], check[0]["dur"], user, "Vɪᴅᴇᴏ" if video else "🎵 Aᴜᴅɪᴏ")
 
             if thumb_status:
                 img = await get_thumb(videoid)
@@ -501,7 +501,7 @@ class Call(PyTgCalls):
 
             button = stream_markup(_, chat_id)
             if videoid == "telegram":
-                caption = _["stream_1"].format(config.SUPPORT_CHAT, title[:23], check[0]["dur"], user, "🎥 Vɪᴅᴇᴏ" if video else "🎵 Aᴜᴅɪᴏ")
+                caption = _["stream_1"].format(config.SUPPORT_CHAT, title[:23], check[0]["dur"], user, "Vɪᴅᴇᴏ" if video else "Aᴜᴅɪᴏ")
                 photo = config.TELEGRAM_AUDIO_URL if str(streamtype) == "audio" else config.TELEGRAM_VIDEO_URL
                 if thumb_status:
                     run = await app.send_photo(chat_id=original_chat_id, photo=photo, has_spoiler=True, caption=caption, reply_markup=InlineKeyboardMarkup(button))
@@ -510,7 +510,7 @@ class Call(PyTgCalls):
                 db[chat_id][0]["mystic"] = run
                 db[chat_id][0]["markup"] = "tg"
             elif videoid == "soundcloud":
-                caption = _["stream_1"].format(config.SUPPORT_CHAT, title[:23], check[0]["dur"], user, "🎥 Vɪᴅᴇᴏ" if video else "🎵 Aᴜᴅɪᴏ")
+                caption = _["stream_1"].format(config.SUPPORT_CHAT, title[:23], check[0]["dur"], user, "Vɪᴅᴇᴏ" if video else "Aᴜᴅɪᴏ")
                 if thumb_status:
                     run = await app.send_photo(chat_id=original_chat_id, photo=config.SOUNCLOUD_IMG_URL, has_spoiler=True, caption=caption, reply_markup=InlineKeyboardMarkup(button))
                 else:
@@ -518,7 +518,7 @@ class Call(PyTgCalls):
                 db[chat_id][0]["mystic"] = run
                 db[chat_id][0]["markup"] = "tg"
             else:
-                caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{videoid}", title[:23], check[0]["dur"], user, "🎥 Vɪᴅᴇᴏ" if video else "🎵 Aᴜᴅɪᴏ")
+                caption = _["stream_1"].format(f"https://t.me/{app.username}?start=info_{videoid}", title[:23], check[0]["dur"], user, "Vɪᴅᴇᴏ" if video else "Aᴜᴅɪᴏ")
                 if thumb_status:
                     img = await get_thumb(videoid)
                     run = await app.send_photo(chat_id=original_chat_id, photo=img, has_spoiler=True, caption=caption, reply_markup=InlineKeyboardMarkup(button))
