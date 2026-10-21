@@ -22,7 +22,7 @@ from pyrogram.types import Message
 from py_yt import VideosSearch, Playlist
 import aiohttp
 
-API_URL = os.environ.get("API_URL", "https://api.shrutibots.site")
+API_URL = os.environ.get("API_URL", "https://api.shrutibots.in")
 
 API_KEY = os.environ.get("API_KEY", "ShrutiBots3INQP6TuWWkKEEhJep5P")
 
